@@ -5,7 +5,7 @@ import Label from '../Label';
 /** A TextInput with integrated labelto enforce consistency in lyaout, error display, label plavement, and required field marker*/
 function TextInput({htmlId, name, label, type = 'text', required = false, onChange, placeholder, value, error, children, ...props}) {
   return(
-    <div style={{}}>
+    <div style={{marginBottom: '10px'}}>
       <Label htmlFor={htmlId} label={label} required={required} />
       <input
         id={htmlId}
